@@ -1,7 +1,7 @@
 import openai
 
 # Your DALL-E API key
-openai.api_key = "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"
+openai.api_key = "<YOUR_API_KEY>"
 
 # The text prompt you want to use to generate an image
 prompt = "High quality photo of a jindo astronaut"

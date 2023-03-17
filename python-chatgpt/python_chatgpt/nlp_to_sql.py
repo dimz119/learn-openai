@@ -6,7 +6,7 @@ from sqlalchemy import text
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
-df = pd.read_csv("/Users/seungjoonlee/git/learn-openai/python-chatgpt/python_chatgpt/sample/temp_with_date.csv")
+df = pd.read_csv("sample/temp_with_date.csv")
 # print(df)
 # print(df.groupby("location").min("temperature"))
 
