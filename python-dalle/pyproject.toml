@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "python-dalle"
+version = "0.1.0"
+description = ""
+authors = ["Seungjoon Lee <joonlee0228@gmail.com>"]
+readme = "README.md"
+packages = [{include = "python_dalle"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+openai = "^0.26.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

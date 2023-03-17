@@ -1,0 +1,36 @@
+# dataset https://www.kaggle.com/datasets/surajjha101/fortune-top-1000-companies-by-revenue-2022
+
+openai api fine_tunes.create -t python_chatgpt/fine_tuning_data.json -m babbage
+
+Upload progress: 100%|██████████████████████████████████████████████████| 150/150 [00:00<00:00, 136kit/s]
+Uploaded file from python_chatgpt/fine_tuning_data.json: file-5UX50t3wgdjOntuFYBFCrMHK
+Created fine-tune: ft-h1P9O8fjYJNnzHfIj5RrAH0V
+Streaming events until fine-tuning is complete...
+
+(Ctrl-C will interrupt the stream, but not cancel the fine-tune)
+[2023-03-14 16:28:42] Created fine-tune: ft-h1P9O8fjYJNnzHfIj5RrAH0V
+
+Stream interrupted (client disconnected).
+To resume the stream, run:
+
+openai api fine_tunes.follow -i ft-h1P9O8fjYJNnzHfIj5RrAH0V
+
+openai api fine_tunes.follow -i ft-h1P9O8fjYJNnzHfIj5RrAH0V
+[2023-03-14 16:28:42] Created fine-tune: ft-h1P9O8fjYJNnzHfIj5RrAH0V
+[2023-03-14 16:43:04] Fine-tune costs $0.00
+[2023-03-14 16:43:04] Fine-tune enqueued. Queue number: 0
+[2023-03-14 16:43:06] Fine-tune started
+[2023-03-14 16:43:26] Completed epoch 1/4
+[2023-03-14 16:43:26] Completed epoch 2/4
+[2023-03-14 16:43:27] Completed epoch 3/4
+[2023-03-14 16:43:27] Completed epoch 4/4
+[2023-03-14 16:43:47] Uploaded model: babbage:ft-altoformula-2023-03-14-23-43-46
+[2023-03-14 16:43:48] Uploaded result file: file-fMbo2suKngO3pzewTiSOV6cF
+[2023-03-14 16:43:48] Fine-tune succeeded
+
+Job complete! Status: succeeded 🎉
+Try out your fine-tuned model:
+
+openai api completions.create -m babbage:ft-altoformula-2023-03-14-23-43-46 -p <YOUR_PROMPT>
+
+openai api completions.create -m babbage:ft-altoformula-2023-03-14-23-43-46 -p "What is Walmart revenue in 2022?"
