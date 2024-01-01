@@ -16,7 +16,7 @@ def execute_function_call(message):
         location = json.loads(message.tool_calls[0].function.arguments)["location"]
         results = get_current_weather(location, 'celsius')
     else:
-        results = f"Error: function {message['tool_calls'][0]['function']['name']} does not exist"
+        results = f"Error: function {message.tool_calls[0].function.name} does not exist"
     return results
 
 tools = [
