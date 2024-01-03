@@ -1,4 +1,3 @@
-# Note: you need to be using OpenAI Python v1.2.4 for the code below to work
 from openai import OpenAI
 
 # make sure you have OPENAI_API_KEY environment variable with API key
