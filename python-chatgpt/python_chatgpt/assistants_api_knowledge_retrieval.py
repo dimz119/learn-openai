@@ -52,9 +52,8 @@ message = client.beta.threads.messages.create(
             file_ids=[file.id])
 
 run = client.beta.threads.runs.create(
-  thread_id=thread.id,
-  assistant_id=assistant.id
-)
+            thread_id=thread.id,
+            assistant_id=assistant.id)
 
 while True:
     run_resp = client.beta.threads.runs.retrieve(
