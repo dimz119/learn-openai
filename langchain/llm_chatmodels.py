@@ -1,5 +1,7 @@
-from langchain.llms import OpenAI
-from langchain.chat_models import ChatOpenAI
+# Note as of 02/27/2024
+# before you start you need to install the following
+# pip install langchain==0.1.9 langchain-openai==0.0.8
+from langchain_openai import OpenAI, ChatOpenAI
 
 # Configure OpenAI API key
 # export OPENAI_API_KEY=""
